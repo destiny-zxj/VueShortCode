@@ -18,5 +18,6 @@ Typecho VueShortCode 是一款基于Vue3用于自定义短代码的Typecho插件
 ## 二次开发
 **短代码开发**
 直接在 Codes.php 文件下写短代码相关功能即可
+
 **添加支持**
 在 InitVueShortCode.php 文件下写修改相关代码即可
