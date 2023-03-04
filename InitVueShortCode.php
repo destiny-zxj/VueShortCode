@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css" />
-
 <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
 <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
 <script src="//cdn.jsdelivr.net/npm/@element-plus/icons-vue"></script>

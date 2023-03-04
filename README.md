@@ -6,6 +6,19 @@ Typecho VueShortCode 是一款基于Vue3用于自定义短代码的Typecho插件
 ## 功能介绍
 * 集成 Vue3，支持在写文章时直接使用 Vue3 语法
 * 集成 Element-Plus，支持相关组件
+
+## 注意
+
+* 由于安装 Handsome 主题导致各种错误
+
+  1. 直接将 ShortCodeFull.php 文件复制到主题目录下
+
+  2. 修改 ShortCodeFull.php 第 336 行的挂载点
+
+```vue
+app.mount("#post-content .entry-content"); -> app.mount("你的挂载点");
+```
+
 ## 使用方法
 ### Element-Plus 组件
 #### 模板
