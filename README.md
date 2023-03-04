@@ -10,6 +10,7 @@ Typecho VueShortCode 是一款基于Vue3用于自定义短代码的Typecho插件
 ### Element-Plus 组件
 * 模板
 短代码属性和内容和 Element-Plus 一致，请参考 [Element-Plus](https://element-plus.gitee.io/zh-CN/component/button.html)
+上下不要有文本，一个短代码独占一行
 
 ```
 [foo name="var"]content[/foo]
