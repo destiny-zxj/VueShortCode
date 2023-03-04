@@ -57,7 +57,7 @@ class VueShortCode_Plugin implements Typecho_Plugin_Interface
 	 * @return void
 	 */
 	public static function init(){
-		require_once 'ShortCode.php';
+		require_once 'libs/ShortCode.php';
 		require_once 'InitVueShortCode.php';
 	}
 }

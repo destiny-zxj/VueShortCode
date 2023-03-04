@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
 <script src="//cdn.jsdelivr.net/npm/element-plus"></script>
+<script src="//cdn.jsdelivr.net/npm/@element-plus/icons-vue"></script>
+
 <?php
 
 /**
@@ -19,7 +22,7 @@ function get_value($attr, $key)
 	# echo $str;
 	$params = explode("=", $str);
 	if (count($params) != 2) return;
-	return $params[1];
+	return str_replace('"', '', $params[1]);
 }
 
 /**
