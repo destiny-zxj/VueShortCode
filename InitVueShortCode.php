@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
-<script src="https://unpkg.com/vue@3.2.47/dist/vue.global.js"></script>
-<script src="//unpkg.com/element-plus"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/element-plus/dist/index.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="//cdn.jsdelivr.net/npm/element-plus"></script>
 <?php
 
 /**
