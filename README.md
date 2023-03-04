@@ -15,7 +15,33 @@ Typecho VueShortCode 是一款基于Vue3用于自定义短代码的Typecho插件
 [foo name="var"]content[/foo]
 [foo name="var" /]
 ```
+* 现已支持的组件
+
+| 短代码  | 说明                 | 用法                                                         |
+| ------- | -------------------- | ------------------------------------------------------------ |
+| tc-vue  | `见下方详细说明`     | `见下方介绍`                                                 |
+| tc-rate | 评分组件。用于评分。 | [用法](https://element-plus.gitee.io/zh-CN/component/rate.html) |
+|         |                      |                                                              |
+
+* tc-vue
+
+> 每篇需要使用短代码的文章必须，放在文章最后。可在此定义变量。
+
+**举例**
+
+如果要显示一个三颗星星的评分组件。
+
+```bash
+[tc-rate v-model="value" disabled disabled show-score score-template="{value}" /]
+[tc-vue value=3 /]
+```
+
+**注意**
+
+* 变量定义不要重名哦！
+
 ## 二次开发
+
 **短代码开发**
 
 直接在 Codes.php 文件下写短代码相关功能即可
