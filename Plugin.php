@@ -39,7 +39,11 @@ class VueShortCode_Plugin implements Typecho_Plugin_Interface
 	 * @param Typecho_Widget_Helper_Form $form 配置面板
 	 * @return void
 	 */
-	public static function config(Typecho_Widget_Helper_Form $form){}
+	public static function config(Typecho_Widget_Helper_Form $form)
+	{
+		$name = new Typecho_Widget_Helper_Form_Element_Text('point', NULL, 'article.post .post-content', _t('vue 挂载点'));
+    	$form->addInput($name);
+	}
 
 	/**
 	 * 个人用户的配置面板

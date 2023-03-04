@@ -56,7 +56,9 @@ ShortCode::set('tc-vue', function ($name,$attr,$text,$code)
 	{
 		$data = $data."$key: $val,";
 	}
-	return '<script>const App = {data() {return {'.$data.'};}};const app = Vue.createApp(App);app.use(ElementPlus);app.mount("article.post .post-content");</script>';
+	$point = Typecho_Widget::widget('Widget_Options')->plugin('VueShortCode')->point;
+	echo $point;
+	return '<script>const App = {data() {return {'.$data.'};}};const app = Vue.createApp(App);app.use(ElementPlus);app.mount("'.$point.'");</script>';
 });
 
 require_once "Codes.php";
